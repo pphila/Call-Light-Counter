@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const TimeRangeInput = ({shift, setShift}) => {
+const TimeRangeInput = ({ shift, setShift }) => {
   const [inputValue, setInputValue] = useState(shift);
 
   const handleChange = (e) => {

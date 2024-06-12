@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
+import TimeRangeInput from './TimeRangeInput';
 
 const MainCounter = () => {
   const [date, setDate] = useState('');
@@ -26,10 +27,7 @@ const MainCounter = () => {
           Date:
           <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
         </label>
-        <label>
-          Shift:
-          <input type="date" value={shift} onChange={(e) => setShift(e.target.value)} />
-        </label>
+        <TimeRangeInput shift={shift} setShift={setShift} />
       </div>
       <div className='grid'>
         {counters.map((count, index) => (
