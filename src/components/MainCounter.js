@@ -20,7 +20,7 @@ const MainCounter = () => {
   };
 
   return(
-    <div>
+    <div className='App'>
       <h1>Call Light Counter</h1>
       <div>
         <label>
