@@ -21,21 +21,23 @@ const MainCounter = () => {
 
   return(
     <div className='App'>
-      <h1>Call Light Counter</h1>
+      <h1 className='title'>Call Light Counter</h1>
       <div>
-        <label>
+        <h3 className='date'>
           Date:
           <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
-        </label>
+        </h3>
         <TimeRangeInput shift={shift} setShift={setShift} />
       </div>
       <div className='grid'>
         {counters.map((count, index) => (
           <div key={index} className='counter-box'>
             <span>Room {index + 1}</span>
-            <button onClick={() => incrementCounter(index)}>+</button>
-            <span>{count}</span>
-            {count > 0 && <button onClick={() => decrementCounter(index)}>-</button>}
+            <div className='counter-controls'>
+              {count > 0 && <button onClick={() => decrementCounter(index)}>-</button>}
+              <span className='counter-value'>{count}</span>
+              <button onClick={() => incrementCounter(index)}>+</button>
+            </div>
           </div>
         ))}
       </div>

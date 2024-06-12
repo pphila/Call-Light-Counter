@@ -15,15 +15,15 @@ const TimeRangeInput = ({ shift, setShift }) => {
 
   return(
     <div>
-      <label>
-        Shift (HHMM-HHMM):
+      <h3>
+        Shift:
         <input 
           type="text"
           value={inputValue}
           onChange={handleChange}
           placeholder='0000-0000'
         />
-      </label>
+      </h3>
     </div>
   );
 };
