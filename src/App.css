@@ -12,6 +12,7 @@
 .date {
   padding: 10px;
   margin-right: 15px;
+  
 }
 
 .shift-text {
@@ -32,6 +33,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
 }
 
 .counter-box span {
