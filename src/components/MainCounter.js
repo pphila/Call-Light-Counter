@@ -69,8 +69,8 @@ const MainCounter = () => {
       <h1 className='title'>Call Light Counter</h1>
       {grids.map((grid, gridIndex) => (
         <div key={gridIndex} className='grid-instance'>
-          <div>
-            <h3 className='date'>
+          <div className='input-group'>
+            <h3 className='label'>
               Date:
               <input
                 type="date"
@@ -86,7 +86,7 @@ const MainCounter = () => {
           <div className='grid'>
             {grid.counters.map((count, counterIndex) => (
               <div key={counterIndex} className='counter-box'>
-                <span>Room {counterIndex +1}</span>
+                <h4>Room {counterIndex +1}</h4>
                 <div className='counter-controls'>
                   {count > 0 && (
                     <button onClick={() => decrementCounter(gridIndex, counterIndex)}>

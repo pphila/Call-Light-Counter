@@ -24,6 +24,14 @@
   margin-bottom: 20px;
 }
 
+.input-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-right: 10px;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
