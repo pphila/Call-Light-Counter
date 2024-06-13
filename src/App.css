@@ -3,6 +3,7 @@
   max-width: 600px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 30px;
 }
 
 .title {
@@ -17,6 +18,10 @@
 
 .shift-text {
   margin-right: 10px;
+}
+
+.grid-instance {
+  margin-bottom: 20px;
 }
 
 .grid {
@@ -53,4 +58,12 @@
 .counter-value {
   width: 30px;
   text-align: center;
+}
+
+.add-grid-button {
+  margin-top: 20px;
+  margin-right: 60px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
